@@ -1,0 +1,33 @@
+#NodeJS Presentation
+
+## Starting a project
+
+Before you begin an express.js project, you must install it with npm:
+<pre>
+npm install -g express
+</pre>
+
+By adding the -g switch npm will install express as global package. That gives us access to the express command from anywhere on our system.
+
+<pre>
+which express
+express {project_name}
+</pre>
+
+NPM has installed everything we need to get up and running.
+
+There are a few configuration options for creating a new project. The express help shows us how we can configure our project:
+
+<pre>
+express --help
+</pre>
+
+The two major choices here are the *--template* swithch, and the *--css* switch.
+
+If you're a fan of using DSLs to create markup, the default "jade" option is the choice for you.
+If you like traditional HTML templating, ejs is a better option.
+
+For the css switch, stylus is the default and only supported option out of the box. Stylus is a css framework inspired by SASS, but written w/ NodeJS.
+
+Unfortunately, since this this talk covers restful APIs, I won't go into detail for either of these topics.
+
